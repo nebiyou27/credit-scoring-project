@@ -1,0 +1,33 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environments
+.env
+*.env
+.venv/
+env/
+myenv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Data
+data/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models and Artifacts
+models/
+logs/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# CI/CD temporary files
+_temp/

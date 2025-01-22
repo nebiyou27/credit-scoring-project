@@ -1,0 +1,28 @@
+name: MLOps Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  train-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r environments/requirements.txt
+
+    - name: Train the model
+      run: python src/model_training.py
+
+    - name: Serve the model
+      run: uvicorn src.model_serving:app --host 0.0.0.0 --port 8000
