@@ -1,0 +1,33 @@
+# General
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Feature Engineering
+xverse
+category-encoders
+scorecardpy
+
+# Machine Learning
+xgboost
+lightgbm
+catboost
+optuna
+
+# API Deployment
+fastapi
+uvicorn[standard]
+
+# Testing
+pytest
+pytest-cov
+flake8
+
+# Logging and Monitoring
+loguru
+mlflow
+
+
+
