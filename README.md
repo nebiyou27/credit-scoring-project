@@ -1,6 +1,4 @@
-Here’s a well-structured and comprehensive `README.md` file for the project:
 
----
 
 # **Credit Scoring Model Project**
 
