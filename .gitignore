@@ -15,6 +15,7 @@ myenv/
 
 # Logs
 *.log
+*.pkl
 
 # Data
 data/
